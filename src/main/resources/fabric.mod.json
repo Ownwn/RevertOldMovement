@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "revert-old-movement",
+	"version": "${version}",
+	"name": "Revert Old Movement",
+	"description": "Reverts the controversial changes in MC-152728",
+	"authors": [
+		"Ownwn"
+	],
+	"contact": {
+		"homepage": "https://github.com/Ownwn/",
+		"sources": "https://github.com/Ownwn/RevertOldMovement"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/revert-old-movement/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ownwn.RevertOldMovement"
+		],
+		"client": [
+			"com.ownwn.RevertOldMovementClient"
+		]
+	},
+	"mixins": [
+		"revert-old-movement.mixins.json",
+		{
+			"config": "revert-old-movement.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
