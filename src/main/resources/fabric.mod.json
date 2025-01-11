@@ -3,7 +3,7 @@
 	"id": "revert-old-movement",
 	"version": "${version}",
 	"name": "Revert Old Movement",
-	"description": "Reverts the controversial changes in MC-152728",
+	"description": "Reverts the controversial sprint changes in MC-152728",
 	"authors": [
 		"Ownwn"
 	],
